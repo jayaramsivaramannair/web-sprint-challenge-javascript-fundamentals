@@ -17,6 +17,8 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
+`Nested function can access the variable internal because of closure. Closure enables a nested function to not only access variable within its own function scope but also variables defined in the global scope
+as well as variables defined in the scope of its surrounding function. Surrounding function in this case is myFunction()`
 
 
 /* Task 2: Counter */

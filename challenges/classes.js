@@ -26,3 +26,21 @@ class cuboidMaker {
 let cuboid = new cuboidMaker(4,5,5);
 console.log(cuboid.volume());
 console.log(cuboid.surfaceArea());
+
+class cubeMaker extends cuboidMaker {
+    constructor(length, width, height) {
+        super(length, width, height)
+    }
+
+    volume() {
+        return this.length * this.width * this.height; //Since all three sides are equal, this will simply return the cube.
+    }
+
+    surfaceArea() {
+        return 6 * (this.length * this.length);
+    }
+}
+
+let myCube = new cubeMaker(5,5,5);
+console.log(myCube.volume());
+console.log(myCube.surfaceArea());

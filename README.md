@@ -26,14 +26,34 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+`The main distinction between .forEach and .map is that -`
+`.forEach applies the function received as a parameter to each array element but its return value is undefined.`
+`On the other hand, .map applies the function received as a parameter to each array element and returns a new array by transforming elements in the original array`.
+
+`The second distinction between .forEach and .map is that -`
+`In case of .forEach, we cannot chain other methods to it since the return value is undefined.`
+`On the other hand, as .map returns a new array with transformed elements, we can chain other methods to the result such as .sort(), .filter() and so on...`
 
 2. Explain the difference between a callback and a higher order function.
+`Higher order function is a function which accepts another function as a parameter or returns a function as an output`
+`On the other hand, callbacks represent functions which are passed in as parameters to a higher order function`
 
 3. What is closure?
+`closure enables an inner/nested function to access a variable not only within its own function scope but it can also access variables from its surrounding function`
+`closure also enables an inner/nested function to keep the access alive to a variable in its surrounding function scope even after the nested function returns`
+`closure can save state of a variable in its surrounding function scope and this becomes especially useful when a function needs to keep track of a counter between successive function calls`
 
 4. Describe the four rules of the 'this' keyword.
+`The value of 'this' differs on how and where the function is invoked.`
+`The four rules of this keyword are as below:`
+`(a) Global Binding: Using this keyword inside a function or in a global scope will refer to the global object which is window in case of a browser`
+`(b) Implicit Binding: 'this' keyword refers to the object on which the function is called`
+`(c) Explicit Binding: This occurs when we use the call(), apply() and bind() methods. In these case, 'this' refers to the object which we have specified`
+`(d) new keyword: new keyword creates a new instance of an object. In this case, 'this' keyword refers to the new instance of the object being created`
 
 5. Why do we need super() in an extended class?
+`super keyword is used in an extended/child class because it helps us initialize variables or set values of properties which are common to both the parent class and child class.`
+`In a way, super keyword helps us avoid duplication and inherit properties from the parent class in few lines of code.`
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

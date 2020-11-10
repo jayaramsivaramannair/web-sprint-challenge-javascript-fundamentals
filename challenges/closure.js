@@ -29,13 +29,13 @@ as well as variables defined in the scope of its surrounding function. Surroundi
 function summation(num) {
   let counter = 0;
   return function retCount() {
-    for(let i = num; num >= 1; num-- ) {
-      counter += num;
-    }
-    return counter;
+      while(num >= 1) {
+          counter += num;
+          num--
+      }
+      return counter;
   }
 }
 
-
-let logSum = summation(2);
+let logSum = summation(4);
 console.log(logSum());
